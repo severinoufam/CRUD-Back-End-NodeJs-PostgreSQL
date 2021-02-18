@@ -1,0 +1,23 @@
+{
+  "name": "CRUD-Back-End-NodeJs-PostgreSQL",
+  "version": "1.0.0",
+  "description": "> CRUD com Node.js & PostgreSQL com enfoque no Back-End.\r > Este projeto tem como principal objetivo criar uma API RESTful e que no final deve ser persistada no PostgreSQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/severinoufam/CRUD-Back-End-NodeJs-PostgreSQL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/severinoufam/CRUD-Back-End-NodeJs-PostgreSQL/issues"
+  },
+  "homepage": "https://github.com/severinoufam/CRUD-Back-End-NodeJs-PostgreSQL#readme",
+  "devDependencies": {
+    "eslint": "^7.20.0"
+  }
+}
