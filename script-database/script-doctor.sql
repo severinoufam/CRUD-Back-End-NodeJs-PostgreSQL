@@ -1,0 +1,6 @@
+CREATE TABLE doctor (
+	doctorId uuid PRIMARY KEY NOT NULL DEFAULT uuid_generate_v4(),
+	name VARCHAR (255) NOT NULL,
+	specialty VARCHAR (255) NOT NULL,
+	CRM VARCHAR (255) NOT NULL
+)
