@@ -4,16 +4,16 @@
  * autor: severino de souza souza
  */
 
- const express = require('express');
+const express = require('express');
 
- const router = express.Router();
+const router = express.Router();
 
- router.get('/api', (req, res) => {
-     res.status(200).send({
-         sucess: 'true',
-         menssage: 'Seja bem-vindo(a)',
-         version: '1.0.0'
-     });
- });
+router.get('/api', (req, res) => {
+    res.status(200).send({
+        sucess: 'true',
+        menssage: 'Seja bem-vindo(a)',
+        version: '1.0.0'
+    });
+});
 
- module.exports = router;
+module.exports = router;
