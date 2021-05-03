@@ -1,7 +1,6 @@
 /**
  * arquivo: routes/index.js
- * descrição: arquivo responsável pela chamada da API na aplicação do lado do back-End.
- * autor: severino de souza souza
+ * Arquivo responsável pela chamada da API.
  */
 
 const express = require('express');
@@ -9,11 +8,11 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/api', (req, res) => {
-    res.status(200).send({
-        sucess: 'true',
-        menssage: 'Seja bem-vindo(a)',
-        version: '1.0.0'
-    });
+  res.status(200).send({
+    success: 'true',
+    message: 'API Node.js + PostgreSQL',
+    version: '1.0.0'
+  });
 });
 
 module.exports = router;

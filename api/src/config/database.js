@@ -1,7 +1,6 @@
 /**
- * arquivo: config.database.js
- * descrição: arquivo responsável pelas 'connectrionStrings' (Cosmos Db & Postgres)
- * autor: severino de souza souza
+ * config/database.js
+ * Arquivo responsável pelas 'connectrionStrings' (Cosmos DB & PostgreSQL)
  */
 
 const { Pool } = require('pg');
@@ -9,15 +8,20 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-// => Conexão com a base de dados:
+// ==> Conexão com a Base de Dados:
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL
+  connectionString: process.env.DATABASE_URL
+});
+
+pool.on('error', (err) => {
+  console.log('Erro inesperado', err)
+  process.exit(-1);
 });
 
 pool.on('connect', () => {
-    console.log('Base de dados conectada com sucesso!')
+  console.log('Base de Dados conectado com sucesso!')
 });
 
 module.exports = {
-    query: (Text, params) => pool.query(Text, params),
+  query: (text, params) => pool.query(text, params),
 };
